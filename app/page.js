@@ -1,5 +1,4 @@
 import Image from "next/image";
-import styles from "./page.module.css";
 import { getData } from "./utils/apiHelpers";
 import { LongDateFormat } from "./components/dateComponents";
 
@@ -9,7 +8,8 @@ export default async function Home() {
   const data = await getData(api);
 
   return (
-    <main className={styles.main}>
+    <main>
+      <h1>Updates</h1>
       {data.newsposts.map((x) => {
         return (
           <article key={x.id}>
