@@ -2,6 +2,7 @@ import HeadBanner from "./components/headBanner";
 import MainMenu from "./components/mainMenu";
 import "./globals.css";
 import { Inter } from "next/font/google";
+import YodaQuotes from "./components/yodaQuotes";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +17,10 @@ export default function RootLayout({ children }) {
       <body>
         <HeadBanner />
         <MainMenu />
-        {children}
+        <main>
+          <YodaQuotes />
+          {children}
+        </main>
         <footer></footer>
       </body>
     </html>

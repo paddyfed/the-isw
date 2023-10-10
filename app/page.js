@@ -8,7 +8,7 @@ export default async function Home() {
   const data = await getData(api);
 
   return (
-    <main>
+    <>
       <h1>Updates</h1>
       {data.newsposts.map((x) => {
         return (
@@ -22,6 +22,6 @@ export default async function Home() {
           </article>
         );
       })}
-    </main>
+    </>
   );
 }
