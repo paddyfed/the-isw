@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { getData } from "./utils/apiHelpers";
 import { LongDateFormat } from "./components/dateComponents";
 import { getSortedPostsData, getPostData } from "./utils/postsHelpers";
 import Link from "next/link";
