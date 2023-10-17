@@ -39,13 +39,15 @@ export async function getSortedPostsData() {
 
   //   console.log(allPostsData);
   // Sort posts by date, slice(0,50) will only return the latest 50 posts
-  return (await allPostsData).sort((a, b) => {
-    if (a.date < b.date) {
-      return 1;
-    } else {
-      return -1;
-    }
-  });
+  return (await allPostsData)
+    .sort((a, b) => {
+      if (a.date < b.date) {
+        return 1;
+      } else {
+        return -1;
+      }
+    })
+    .slice(0, 4);
 }
 
 export async function getPostData(id) {

@@ -38,5 +38,5 @@ const quotes = [
 export default function YodaQuotes() {
   const index = Math.floor(Math.random() * quotes.length);
 
-  return <p>"{quotes[index]}"</p>;
+  return <p>{`"${quotes[index]}"`}</p>;
 }
