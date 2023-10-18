@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { LongDateFormat } from "./components/dateComponents";
-import { getSortedPostsData } from "./utils/postsHelpers";
+import { getSortedPostsData } from "../utils/postsHelpers";
 import Link from "next/link";
 
 const allPostsData = await getSortedPostsData();

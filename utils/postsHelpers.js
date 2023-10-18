@@ -49,3 +49,9 @@ export async function getSortedPostsData() {
     })
     .slice(0, 4);
 }
+
+export function getPostsArchiveIndex() {
+  return <p>Hellos</p>;
+}
+
+export default getPostsArchiveIndex;
