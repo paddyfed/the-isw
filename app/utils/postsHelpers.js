@@ -6,28 +6,6 @@ import html from "remark-html";
 
 const postsDirectory = path.join(process.cwd(), "posts");
 
-export async function getArchiveNewsIndexItems() {
-  // Get file names under /posts
-  const fileNames = fs.readdirSync(postsDirectory);
-  const allPostsData = Promise.all(
-    fileNames.map(async (fileName) => {
-      return {
-        fileName,
-      };
-    })
-  );
-
-  console.log(allPostsData);
-
-  //   console.log(allPostsData);
-  // Sort posts by date, slice(0,50) will only return the latest 50 posts
-  return await allPostsData;
-}
-
-export function thisIsATest() {
-  return <>test</>;
-}
-
 export async function getSortedPostsData() {
   // Get file names under /posts
   const fileNames = fs.readdirSync(postsDirectory);
