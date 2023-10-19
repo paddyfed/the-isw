@@ -40,18 +40,31 @@ export async function getSortedPostsData() {
   //   console.log(allPostsData);
   // Sort posts by date, slice(0,50) will only return the latest 50 posts
   return (await allPostsData)
-    .sort((a, b) => {
-      if (a.date < b.date) {
-        return 1;
-      } else {
-        return -1;
-      }
-    })
+    .sort((a, b) => (a.date < b.date ? 1 : -1))
     .slice(0, 4);
 }
 
-export function getPostsArchiveIndex() {
-  return <p>Hellos</p>;
-}
+export async function getPostsArchiveIndex() {
+  const fileNames = fs.readdirSync(postsDirectory);
+  const allPostsData = Promise.all(
+    fileNames.map(async (fileName) => {
+      const id = fileName.replace(/\.md$/, "");
+      const d = new Date(id);
+      const dLocal = d.toLocaleDateString();
+      const year = d.getFullYear();
+      const month = d.getMonth();
+      return {
+        month,
+        year,
+      };
+    })
+  );
 
-export default getPostsArchiveIndex;
+  const unique = [
+    ...new Set((await allPostsData).map((o) => JSON.stringify(o))),
+  ].map((s) => JSON.parse(s));
+
+  console.log(unique);
+
+  return unique;
+}
