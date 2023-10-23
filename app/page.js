@@ -1,7 +1,7 @@
 import { LongDateFormat } from "./components/dateComponents";
 import { getData } from "./utils/apiHelpers";
 
-const api = "http://localhost:3000/api/latest_news";
+const api = `${process.env.API_URL}/api/latest_news`;
 
 // const allPostsData = await getSortedPostsData();
 

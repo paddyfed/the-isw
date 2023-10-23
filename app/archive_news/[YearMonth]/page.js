@@ -2,7 +2,7 @@ import { getData } from "@/app/utils/apiHelpers";
 import { LongDateFormat } from "@/app/components/dateComponents";
 
 export default async function ArchiveNewsYearMonth({ params }) {
-  const api = `http://localhost:3000/api/archive_news/${params.YearMonth}`;
+  const api = `${process.env.API_URL}/api/archive_news/${params.YearMonth}`;
   const allPostsData = await getData(api);
 
   console.log("allpostsdata", allPostsData);
