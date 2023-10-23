@@ -1,18 +1,18 @@
 import { LongDateFormat } from "./components/dateComponents";
 import { getData } from "./utils/apiHelpers";
 
-// const api = `${process.env.API_URL}/api/latest_news`;
+const api = `${process.env.API_URL}/api/latest_news`;
 
 // const allPostsData = await getSortedPostsData();
 
 export default async function Home() {
-  // const allPostsData = await getData(api);
+  const allPostsData = await getData(api);
 
   return (
     <>
       <h1>Updates</h1>
 
-      {/* {allPostsData?.length > 0 ? (
+      {allPostsData?.length > 0 ? (
         // If filterdPostsData. length is greater than 0 then display them
         <>
           {allPostsData?.map(({ id, date, contentHtml }) => (
@@ -25,7 +25,7 @@ export default async function Home() {
       ) : (
         // Otherwise just show a notice that there are No Results
         <div>No Results</div>
-      )} */}
+      )}
     </>
   );
 }
