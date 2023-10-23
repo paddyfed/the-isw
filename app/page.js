@@ -18,7 +18,7 @@ export default async function Home() {
           {allPostsData.map(({ id, date, contentHtml }) => (
             <article key={id}>
               <h1>{LongDateFormat(date)}</h1>
-              <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
+              {/* <div dangerouslySetInnerHTML={{ __html: contentHtml }} /> */}
             </article>
           ))}
         </>
