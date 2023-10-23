@@ -1,11 +1,13 @@
-import Image from "next/image";
 import { LongDateFormat } from "./components/dateComponents";
-import { getSortedPostsData, getPostData } from "./utils/postsHelpers";
-import Link from "next/link";
+import { getData } from "./utils/apiHelpers";
 
-const allPostsData = await getSortedPostsData();
+const api = `${process.env.API_URL}/api/latest_news`;
+
+// const allPostsData = await getSortedPostsData();
 
 export default async function Home() {
+  const allPostsData = await getData(api);
+
   return (
     <>
       <h1>Updates</h1>

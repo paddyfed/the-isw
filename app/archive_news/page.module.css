@@ -1,0 +1,52 @@
+.archiveGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1.5em 1.5em 1.5em 1.5em;
+  grid-template-areas:
+    "year year year"
+    "month01 month02 month03"
+    "month04 month05 month06"
+    "month07 month08 month09"
+    "month10 month11 month12";
+}
+
+.archiveYear {
+  grid-area: year;
+}
+
+.archiveMonth01 {
+  grid-area: month01;
+}
+.archiveMonth02 {
+  grid-area: month02;
+}
+.archiveMonth03 {
+  grid-area: month03;
+}
+.archiveMonth04 {
+  grid-area: month04;
+}
+.archiveMonth05 {
+  grid-area: month05;
+}
+.archiveMonth06 {
+  grid-area: month06;
+}
+.archiveMonth07 {
+  grid-area: month07;
+}
+.archiveMonth08 {
+  grid-area: month08;
+}
+.archiveMonth09 {
+  grid-area: month09;
+}
+.archiveMonth10 {
+  grid-area: month10;
+}
+.archiveMonth11 {
+  grid-area: month11;
+}
+.archiveMonth12 {
+  grid-area: month12;
+}
