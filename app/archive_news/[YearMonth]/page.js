@@ -10,7 +10,7 @@ export default async function ArchiveNewsYearMonth({ params }) {
 
   return (
     <>
-      {allPostsData.map(({ id, date, contentHtml }) => (
+      {allPostsData.filtered.map(({ id, date, contentHtml }) => (
         <article key={id}>
           <h1>{LongDateFormat(date)}</h1>
           <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
