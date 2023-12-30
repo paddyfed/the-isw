@@ -23,21 +23,17 @@ export async function getEditorialTitles() {
 }
 
 export async function getEditorial(id) {
-  // Getfilenames under /editorials
-  const fileNames = fs.readdirSync(editorialsDirectory);
-  const allEditorialData = Promise.all(
-    fileNames.map(async (fileName) => {
-      // Remove .md from file to get id
-      const id = fileName.replace(/\.md$/, "");
-      return {
-        id,
-      };
-    })
-  );
+  const editorialPath = path.join(editorialsDirectory, `${id}.md`);
 
-  const filteredEditorial = (await allEditorialData).filter(
-    (editorial) => editorial.id === id
-  );
+  const fileContents = fs.readFileSync(editorialPath, "utf8");
 
-  return filteredEditorial;
+  // Use gray-matter to parse the post metadata section
+  const matterResult = matter(fileContents);
+
+  const processedContent = await remark()
+    .use(html)
+    .process(matterResult.content);
+  const contentHtml = processedContent.toString();
+
+  return { contentHtml, ...matterResult.data };
 }
