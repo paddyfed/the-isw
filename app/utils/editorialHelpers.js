@@ -13,8 +13,17 @@ export async function getEditorialTitles() {
     fileNames.map(async (fileName) => {
       // Remove .md from file to get id
       const id = fileName.replace(/\.md$/, "");
+
+      // Read markdown file as string
+      const fullPath = path.join(editorialsDirectory, fileName);
+      const fileContents = fs.readFileSync(fullPath, "utf8");
+
+      // Use gray-matter to parse the post metadata section
+      const matterResult = matter(fileContents);
+
       return {
         id,
+        ...matterResult.data,
       };
     })
   );
