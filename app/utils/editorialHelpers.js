@@ -77,5 +77,5 @@ export async function getLatestEditorial() {
 
   return (await allEditorialData)
     .sort((a, b) => (a.date < b.date ? 1 : -1))
-    .slice(0, 1);
+    .slice(0, 1)[0];
 }
