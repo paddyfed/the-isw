@@ -19,3 +19,5 @@ It was a great treat and honour for me to meet Caroline Blakiston. She's a quiet
 If you want to meet any of the SW actors or actresses, going to a convention or toy expo is understandably to the best way to do it; it's also far less embarrassing or offensive to them then trying to go to their home or meeting them on the street. If you're not spending the day, I recommend going closer to the end of the day. Certainly, they'll be tired, but it increases your chances of actually getting to speak with them, rather than being rushed through the autograph line.
 
 I consider myself lucky to have met four of the talented people who helped to make the Star Wars saga the best movies of all time, and I'm hoping to meet more in the months to come!
+
+D

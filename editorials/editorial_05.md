@@ -21,3 +21,5 @@ It wasn't until we finally got into Monaghan town at 7.30 that I realised that I
 I still had a good 10 minutes to go when I arrived, exhausted from the run. But, disaster struck! Sold out! I was gutted. I just couldn't believe it. After all that I still couldn't get to see AOTC. But then the cinema manager came out. A couple who had pre-booked their tickets for the show still hadn't turned up. After waiting for a few minutes for them he decided to let me, and one other guy, into screen 2 of Monaghan cinema to see Star Wars Episode II: Attack of the Clones.
 
 Even though I missed the opening crawl (I entered the screening just as Padmé was holding Cordé) I settled down and thoroughly enjoyed the film. We got the usual reactions, a laugh at Yoda and the younglings, a gasp when Obi-Wan jumped through the window, the slight jump when Jango's seismic charges went off, a murmer of anticipation when Yoda entered the duel and the total amazement when he started fighting with a lightsaber. After it though, everyone was in agreement that it was a great movie and wondering about Episode III.
+
+D
