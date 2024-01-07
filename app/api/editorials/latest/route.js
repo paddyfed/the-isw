@@ -1,3 +1,4 @@
+// Redeploy
 import { NextResponse } from "next/server";
 import { getLatestEditorial } from "@/app/utils/editorialHelpers";
 
