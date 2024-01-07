@@ -15,5 +15,3 @@ All money from this service will go straight back to the site. We could pay for 
 None of this money will be used for my own personal use. Nor will it be used in any inappropriate way. Also, I want to make clear, I will NEVER ask members to donate or pay for the site. I don't believe that you need to pay just to say that you're a fan of Star Wars, especially an Irish fan.
 
 Please give me your input. This is the most important thing I have ever asked you.
-
-D

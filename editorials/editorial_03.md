@@ -13,5 +13,3 @@ The site also has various news pages for each section of the site. While it may 
 Not only do we have all these new sections to explore but we also have the promise of more to come. The Databank section will be added to so that it will include information on creatures and species (which are unavailable as of writing) also on some sections is a download option. While this may only include such things as the Star Wars internet bowsers, it would be cool if it could also be used for other things like official Icons or mouse pointers or other things to brighten up your computer.
 
 While there is so much more that can be written about the new look site, I don't believe I could ever do it justice. I hope that this design will stay with us for a long while and when it does finally change that some of the great sections and improvements will be kept.
-
-D

@@ -9,6 +9,8 @@ const editorialsDirectory = path.join(process.cwd(), "editorials");
 export async function getEditorialTitles() {
   // Getfilenames under /editorials
   const fileNames = fs.readdirSync(editorialsDirectory);
+
+  // try again
   const allEditorialData = Promise.all(
     fileNames.map(async (fileName) => {
       // Remove .md from file to get id

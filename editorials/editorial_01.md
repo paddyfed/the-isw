@@ -15,5 +15,3 @@ However if the Episode I DVD were released now it probably won't have any added 
 Another plus about waiting is the fact that after so many years of waiting, you can finally get to see the full saga, in it's entirety and in any new form for the first time. I believe it would be like watching the saga all over again, with new eyes. By this time there could also have been great advances in DVD technology. They could be of better quality, they may be able to store more information and any bugs or faults that are in the system at the minute could've been ironed out by that stage.
 
 So what will you do if (and when) the Episode I DVD is released this year? Will you buy it and enjoy it now? Will you rent it out and enjoy it in the short term? Will you get a mate to buy it and go around to his/her house every time you want to watch it? Or will you, like me, wait patiently until 2006 to when the full Star Wars saga, all six movies, is released possibly in a new form and enjoy them all over again?
-
-D
