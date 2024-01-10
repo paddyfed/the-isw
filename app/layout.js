@@ -3,6 +3,9 @@ import MainMenu from "./components/mainMenu";
 import "./globals.css";
 import { Inter } from "next/font/google";
 import YodaQuotes from "./components/yodaQuotes";
+import { config } from "@fortawesome/fontawesome-svg-core";
+import "@fortawesome/fontawesome-svg-core/styles.css";
+config.autoAddCss = false;
 
 export const revalidate = 3600;
 
