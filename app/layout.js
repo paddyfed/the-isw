@@ -4,7 +4,7 @@ import "./globals.css";
 import { Inter } from "next/font/google";
 import YodaQuotes from "./components/yodaQuotes";
 
-export const revalidate = 0;
+export const revalidate = 3600;
 
 const inter = Inter({ subsets: ["latin"] });
 
