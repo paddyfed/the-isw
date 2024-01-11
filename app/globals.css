@@ -439,15 +439,6 @@ nav ul li a {
   display: none;
 }
 
-a[target="_blank"]::after {
-  /* using style CSS custom property */
-  font: var(--fa-font-solid);
-  content: "\f08e";
-  margin-left: 0.3em;
-  font-size: xx-small;
-  vertical-align: text-top;
-}
-
 p:last-child {
   margin-bottom: 0 !important;
   margin-right: 0 !important;
