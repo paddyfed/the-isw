@@ -1,7 +1,8 @@
 import { getData } from "@/app/utils/apiHelpers";
 import { LongDateFormat } from "@/app/components/dateComponents";
 
-export default async function ArchiveNewsYearMonth({ params }) {
+export default async function ArchiveNewsYearMonth(props) {
+  const params = await props.params;
   const api = `${process.env.API_URL}/api/archive_news/${params.YearMonth}`;
   const allPostsData = await getData(api);
 

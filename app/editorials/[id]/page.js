@@ -3,7 +3,8 @@ import { LongDateFormat } from "@/app/components/dateComponents";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
-export default async function EditorialPost({ params }) {
+export default async function EditorialPost(props) {
+  const params = await props.params;
   const api = `${process.env.API_URL}/api/editorials/${params.id}`;
   let editorialData;
   try {
